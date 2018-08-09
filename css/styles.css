@@ -1,0 +1,233 @@
+/*Base  */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+  font-size: 0.75em;
+  color: grey;
+  width: 98%;
+	font-family: 'Cairo', sans-serif;
+}
+
+header {
+  text-align: center;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+h4,
+legend {
+  color: black;
+  font-size: 1.2em;
+}
+
+legend {
+  font-weight: bolder;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+legend+p {
+  margin-top: 0;
+}
+
+input,
+select,
+textarea {
+  border: none;
+  background-color: #E8E8E8;
+  padding: 7px;
+  border-radius: 3px;
+  margin-top: 6px;
+  margin-bottom: 10px;
+	line-height: 1.7;
+}
+
+fieldset {
+  border: none;
+}
+
+button {
+  width: 100%;
+  background-color: #54F0D3;
+  color: white;
+  border-radius: 5px;
+	border: none;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+footer {
+  text-align: center;
+	padding-bottom: 100px;
+}
+
+/* Lay */
+
+.heading {
+  background-color: #083645;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.banner,
+main {
+  padding-left: 5px;
+}
+
+.banner p {
+  margin-top: 7px;
+}
+
+.banner,
+main,
+footer {
+  /* width: 270px; */
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.first {
+  border: solid black 3px;
+  margin-bottom: 0;
+}
+
+.second {
+  border: solid black 1px;
+  margin-top: 3px;
+}
+
+::placeholder {
+  text-align: right;
+  font-style: italic;
+	padding-right: 5px;
+}
+
+textarea::placeholder {
+	text-align: center;
+	color: black;
+}
+
+select:hover,
+input:hover,
+textarea:hover {
+	/* background-color: White ; */
+	color: darkblue;
+	border: darkblue solid 1px;
+	border-radius: 5px;
+}
+
+.contact input,
+select,
+textarea {
+  width: 100%
+}
+
+form {
+	background-color: #EBF4F7;
+}
+
+#code {
+  width: 120px;
+}
+
+#javascript,
+#p_text {
+  margin-bottom: 15px;
+}
+
+#format,
+#topics {
+  margin-top: 15px;
+}
+
+.newsletter {
+	padding: 0;
+}
+
+.one {
+  padding-left: 7px;
+}
+
+input,
+textarea {
+	transition: all 3s ease-in-out;
+}
+
+textarea:focus {
+  outline: 0px;
+	background-color: #BBF6FA;
+	width: 90%;
+}
+
+input:focus {
+	outline: 0px;
+	background-color: #BBF6FA;
+}
+
+input[required]:focus {
+	outline:0px;
+	background-color: #F02449;
+	color: white;
+}
+
+input.check {
+  width: 16px;
+  height: 16px;
+  outline: none;
+	transition: all 2s ease-in-out;
+}
+
+
+
+input.check:focus{
+  border: 6px solid black;
+	background-color: lightblue;
+}
+
+
+/*Media Queries  */
+
+@media (min-width: 768px) {
+
+	button {
+		width: 100%;
+	}
+
+	input[type="code"] {
+		width: 160px;
+	}
+
+	.banner,
+	main,
+	footer {
+		width: 50%;
+		margin: auto;
+	}
+
+	.flex input,
+	select {
+		flex: 0 0 70%;
+	}
+
+	.flex label {
+		flex: 0 0 30%;
+	}
+
+	.flex {
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: baseline;
+	}
+
+}
