@@ -184,14 +184,8 @@ input[required]:focus {
 input.check {
   width: 16px;
   height: 16px;
-  outline: none;
-	transition: all 2s ease-in-out;
 }
 
-input.check:focus{            /* doesn't work */
-  border: 6px solid black;
-	background-color: lightblue;
-}
 
 
 /*Media Queries  */
@@ -213,7 +207,7 @@ input.check:focus{            /* doesn't work */
 	align-items: baseline;
 	}
 
-	#code {      /* doesn't work to change the "zip code" input */
+	#code {
 		flex: 0.5;
 	}
 
