@@ -214,7 +214,7 @@ input.check:focus{            /* doesn't work */
 	}
 
 	#code {      /* doesn't work to change the "zip code" input */
-		width: 50%;
+		flex: 0.5;
 	}
 
 	button {
